@@ -1,0 +1,278 @@
+extends base/_layout
+block head
+    title Main
+block page
+    section.listen
+        .listen__inner.container
+            .listen__bg.background-image
+                picture
+                    source(srcset="images/listen/listen-360.webp" type="image/webp")
+                    img(src="images/listen/listen-360.jpg" alt="listen background image" width="460" height="242")
+            .listen__info
+                h2.listen__title LISTEN WITHOUT LIMITS AND DOWNLOAD !
+                p.listen__text.
+                    Get everything you need for you next show, #[br] and bring down the house.
+                form.listen__form(action="#")
+                    label.listen__form-label
+                        input.listen__form-field(type="text" placeholder="Track, Artist and Label search")
+                        button.listen__form-btn
+                            span.visually-hidden Search button
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-search-normal")
+
+    section.features
+        .features__inner.container
+            ul.features__list
+                li.features__item
+                    h2.features__title Free Publishing
+                    p.features__text Upload, share with fans and earn money
+                li.features__item
+                    h2.features__title Free Publishing
+                    p.features__text Upload, share with fans and earn money
+                li.features__item
+                    h2.features__title Free Publishing
+                    p.features__text Upload, share with fans and earn money
+                li.features__item
+                    h2.features__title Free Publishing
+                    p.features__text Upload, share with fans and earn money
+
+    section.best
+        .best__inner.container
+            .best__top
+                h2.best__title.title BEST TRACKS OF OUR DJ POOL
+                .best__manage
+                    ul.best__date
+                        li
+                            a.best__date-btn.best__date-btn--active(href="#") Today
+                        li
+                            a.best__date-btn(href="#") Week
+                        li
+                            a.best__date-btn(href="#") Month
+                    a.best__more(href="#") See more tracks
+            .best__tracks
+                a.best__tracks-item(href="#") 
+                    .best__tracks-top
+                        .best__tracks-img
+                            picture
+                                source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                        p.best__tracks-duration 03:45
+                    .best__tracks-info
+                        h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                        p.best__tracks-author Jacob Jones
+                        .best__tracks-manage
+                            span Subscribe
+                            span.best__tracks-subscribe Premium
+            a.best__btn.btn(href="#") VIEW MORE BEST TRACKS
+
+    section.best
+        .best__inner.container
+            .best__top
+                h2.best__title.title BEST TRACKS OF OUR DJ POOL
+                .best__manage
+                    ul.best__date
+                        li
+                            a.best__date-btn.best__date-btn--active(href="#") Today
+                        li
+                            a.best__date-btn(href="#") Week
+                        li
+                            a.best__date-btn(href="#") Month
+                    a.best__more(href="#") See more playlists
+            .best__playlist
+                a.best__playlist-item(href="#")
+                    .best__playlist-img
+                        picture
+                            source(srcset="images/best/playlist-1.webp" type="image/webp")
+                            img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                    .best__playlist-info
+                        .best__playlist-box
+                            h3.best__playlist-desc Playlist name
+                            p.best__playlist-title Darlene Robertson
+                        .best__playlist-box
+                            p.best__playlist-title Tracks
+                            p.best__playlist-desc 65
+                        .best__playlist-box
+                            p.best__playlist-title Playlist time
+                            p.best__playlist-desc 06:34:32
+            a.best__btn.btn(href="#") VIEW MORE BEST PLAYLISTS
+
+    section.music
+        .music__inner.container
+            h2.music__title.title GET MUSIC
+            ul.music__list
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-1.webp" type="image/webp")
+                                img(src="images/music/music-1.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-2.webp" type="image/webp")
+                                img(src="images/music/music-2.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-3.webp" type="image/webp")
+                                img(src="images/music/music-3.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-4.webp" type="image/webp")
+                                img(src="images/music/music-4.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-5.webp" type="image/webp")
+                                img(src="images/music/music-5.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-6.webp" type="image/webp")
+                                img(src="images/music/music-6.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-7.webp" type="image/webp")
+                                img(src="images/music/music-7.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+                li.music__item
+                    .music__left
+                        .music__poster
+                            picture
+                                source(srcset="images/music/music-1.webp" type="image/webp")
+                                img(src="images/music/music-1.jpg" alt="poster" width="46" height="46")
+                        .music__download
+                            a.music__download-btn(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-download")
+                            p.music__download-num -1
+                        .music__info
+                            h3.music__name Overtone To The Sun (Bubble Couple Remix)
+                            p.music__author Marielle Wigington
+                    .music__right
+                        .music__subscribe
+                            p Subscribe
+                            p.music__sibscribe-type Premium
+                        .music__desc
+                            .music__duration 429:12
+            a.music__more.btn.btn-double(href="#")
+                svg
+                    use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                span VIEW MORE
+                svg
+                    use(href="images/sprites/main.stack.svg#svg-arrow-down")
+
+    section.spin
+        .spin__inner.container
+            .spin__bg.background-image
+                picture
+                    source(srcset="images/spin/spin-360.webp" type="image/webp")
+                    img(src="images/spin/spin-360.jpg" alt="spin background image" width="336" height="204")
+            .spin__info
+                h2.spin__title Questions before taking us for a spin?
+                p.spin__text #[a(href="#") Read FAQ] or #[a(href="#") Contact us]

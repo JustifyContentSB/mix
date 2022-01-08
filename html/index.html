@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__top">
+            <div class="header__top-inner container">
+              <div class="header__lang">
+                <button class="header__lang-active">English</button>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__bottom-inner container">
+              <div class="header__menu">
+                <button class="header__burger btn-circle">
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-menu"></use>
+                  </svg>
+                </button><a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="mixupload logo" width="150" height="29"></a>
+                <ul class="header__manage">
+                  <li class="header__manage-item"><a class="header__manage-btn btn-circle" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-shopping"></use>
+                      </svg></a></li>
+                  <li class="header__manage-item"><a class="header__manage-btn btn-circle" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-moon"></use>
+                      </svg></a></li>
+                </ul>
+                <div class="header__user">
+                  <div class="header__user-profile"><a class="header__user-btn btn-circle" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-profile"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+              <ul class="header__music">
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-star"></use>
+                    </svg>TOP 100</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-activity"></use>
+                    </svg>Trending</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-video-square"></use>
+                    </svg>Streams</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-video-play"></use>
+                    </svg>Video</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-people"></use>
+                    </svg>Users</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-note"></use>
+                    </svg>News</a></li>
+                <li class="header__music-item"><a class="header__music-link" href="#">
+                    <svg class="header__music-icon">
+                      <use href="images/sprites/main.stack.svg#svg-routing"></use>
+                    </svg>Genres map</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="listen">
+          <div class="listen__inner container">
+            <div class="listen__bg background-image">
+              <picture>
+                <source srcset="images/listen/listen-360.webp" type="image/webp"><img src="images/listen/listen-360.jpg" alt="listen background image" width="460" height="242">
+              </picture>
+            </div>
+            <div class="listen__info">
+              <h2 class="listen__title">LISTEN WITHOUT LIMITS AND DOWNLOAD !</h2>
+              <p class="listen__text">Get everything you need for you next show, <br> and bring down the house.</p>
+              <form class="listen__form" action="#">
+                <label class="listen__form-label">
+                  <input class="listen__form-field" type="text" placeholder="Track, Artist and Label search">
+                  <button class="listen__form-btn"><span class="visually-hidden">Search button</span>
+                    <svg>
+                      <use href="images/sprites/main.stack.svg#svg-search-normal"></use>
+                    </svg>
+                  </button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="features__inner container">
+            <ul class="features__list">
+              <li class="features__item">
+                <h2 class="features__title">Free Publishing</h2>
+                <p class="features__text">Upload, share with fans and earn money</p>
+              </li>
+              <li class="features__item">
+                <h2 class="features__title">Free Publishing</h2>
+                <p class="features__text">Upload, share with fans and earn money</p>
+              </li>
+              <li class="features__item">
+                <h2 class="features__title">Free Publishing</h2>
+                <p class="features__text">Upload, share with fans and earn money</p>
+              </li>
+              <li class="features__item">
+                <h2 class="features__title">Free Publishing</h2>
+                <p class="features__text">Upload, share with fans and earn money</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="best">
+          <div class="best__inner container">
+            <div class="best__top">
+              <h2 class="best__title title">BEST TRACKS OF OUR DJ POOL</h2>
+              <div class="best__manage">
+                <ul class="best__date">
+                  <li><a class="best__date-btn best__date-btn--active" href="#">Today</a></li>
+                  <li><a class="best__date-btn" href="#">Week</a></li>
+                  <li><a class="best__date-btn" href="#">Month</a></li>
+                </ul><a class="best__more" href="#">See more tracks</a>
+              </div>
+            </div>
+            <div class="best__tracks"><a class="best__tracks-item" href="#"> 
+                <div class="best__tracks-top">
+                  <div class="best__tracks-img">
+                    <picture>
+                      <source srcset="images/best/tracks-1.webp" type="image/webp"><img src="images/best/tracks-1.jpg" alt="poster" width="124" height="124">
+                    </picture>
+                  </div>
+                  <p class="best__tracks-duration">03:45</p>
+                </div>
+                <div class="best__tracks-info">
+                  <h3 class="best__tracks-title">Becoming. Giving Up. (Years of Denial Remix)</h3>
+                  <p class="best__tracks-author">Jacob Jones</p>
+                  <div class="best__tracks-manage"><span>Subscribe</span><span class="best__tracks-subscribe">Premium</span></div>
+                </div></a></div><a class="best__btn btn" href="#">VIEW MORE BEST TRACKS</a>
+          </div>
+        </section>
+        <section class="best">
+          <div class="best__inner container">
+            <div class="best__top">
+              <h2 class="best__title title">BEST TRACKS OF OUR DJ POOL</h2>
+              <div class="best__manage">
+                <ul class="best__date">
+                  <li><a class="best__date-btn best__date-btn--active" href="#">Today</a></li>
+                  <li><a class="best__date-btn" href="#">Week</a></li>
+                  <li><a class="best__date-btn" href="#">Month</a></li>
+                </ul><a class="best__more" href="#">See more playlists</a>
+              </div>
+            </div>
+            <div class="best__playlist"><a class="best__playlist-item" href="#">
+                <div class="best__playlist-img">
+                  <picture>
+                    <source srcset="images/best/playlist-1.webp" type="image/webp"><img src="images/best/playlist-1.jpg" alt="poster" width="90" height="90">
+                  </picture>
+                </div>
+                <div class="best__playlist-info">
+                  <div class="best__playlist-box">
+                    <h3 class="best__playlist-desc">Playlist name</h3>
+                    <p class="best__playlist-title">Darlene Robertson</p>
+                  </div>
+                  <div class="best__playlist-box">
+                    <p class="best__playlist-title">Tracks</p>
+                    <p class="best__playlist-desc">65</p>
+                  </div>
+                  <div class="best__playlist-box">
+                    <p class="best__playlist-title">Playlist time</p>
+                    <p class="best__playlist-desc">06:34:32</p>
+                  </div>
+                </div></a></div><a class="best__btn btn" href="#">VIEW MORE BEST PLAYLISTS</a>
+          </div>
+        </section>
+        <section class="music">
+          <div class="music__inner container">
+            <h2 class="music__title title">GET MUSIC</h2>
+            <ul class="music__list">
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-1.webp" type="image/webp"><img src="images/music/music-1.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-2.webp" type="image/webp"><img src="images/music/music-2.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-3.webp" type="image/webp"><img src="images/music/music-3.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-4.webp" type="image/webp"><img src="images/music/music-4.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-5.webp" type="image/webp"><img src="images/music/music-5.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-6.webp" type="image/webp"><img src="images/music/music-6.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-7.webp" type="image/webp"><img src="images/music/music-7.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+              <li class="music__item">
+                <div class="music__left">
+                  <div class="music__poster">
+                    <picture>
+                      <source srcset="images/music/music-1.webp" type="image/webp"><img src="images/music/music-1.jpg" alt="poster" width="46" height="46">
+                    </picture>
+                  </div>
+                  <div class="music__download"><a class="music__download-btn" href="#">
+                      <svg>
+                        <use href="images/sprites/main.stack.svg#svg-download"></use>
+                      </svg></a>
+                    <p class="music__download-num">-1</p>
+                  </div>
+                  <div class="music__info">
+                    <h3 class="music__name">Overtone To The Sun (Bubble Couple Remix)</h3>
+                    <p class="music__author">Marielle Wigington</p>
+                  </div>
+                </div>
+                <div class="music__right">
+                  <div class="music__subscribe">
+                    <p>Subscribe</p>
+                    <p class="music__sibscribe-type">Premium</p>
+                  </div>
+                  <div class="music__desc">
+                    <div class="music__duration">429:12</div>
+                  </div>
+                </div>
+              </li>
+            </ul><a class="music__more btn btn-double" href="#">
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+              </svg><span>VIEW MORE</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+              </svg></a>
+          </div>
+        </section>
+        <section class="spin">
+          <div class="spin__inner container">
+            <div class="spin__bg background-image">
+              <picture>
+                <source srcset="images/spin/spin-360.webp" type="image/webp"><img src="images/spin/spin-360.jpg" alt="spin background image" width="336" height="204">
+              </picture>
+            </div>
+            <div class="spin__info">
+              <h2 class="spin__title">Questions before taking us for a spin?</h2>
+              <p class="spin__text"><a href="#">Read FAQ</a> or <a href="#">Contact us</a></p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container"> </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

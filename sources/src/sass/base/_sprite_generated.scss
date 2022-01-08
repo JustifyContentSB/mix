@@ -1,0 +1,417 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-activity {
+	@extend %svg-common;
+	background-position: 0 70.27027027027027%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-activity {
+	background-position: 0 70.27027027027027%;
+}
+@mixin svg-svg-activity-hover {
+	.svg-svg-activity {
+		@include svg-pos-svg-activity-hover
+	}
+}
+
+.svg-svg-activity:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-activity-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-arrow-down {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-arrow-down {
+	background-position: 0 0;
+}
+@mixin svg-svg-arrow-down-hover {
+	.svg-svg-arrow-down {
+		@include svg-pos-svg-arrow-down-hover
+	}
+}
+
+.svg-svg-arrow-down:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-arrow-down-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-download {
+	@extend %svg-common;
+	background-position: 26.829268292682926% 96.1038961038961%;
+	background-size: math.div(100, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-download {
+	background-position: 26.829268292682926% 96.1038961038961%;
+}
+@mixin svg-svg-download-hover {
+	.svg-svg-download {
+		@include svg-pos-svg-download-hover
+	}
+}
+
+.svg-svg-download:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(19, 18)*100%;
+}
+
+.svg-svg-download-dims {
+	width: 18px;
+	height: 19px;
+}
+
+.svg-svg-menu {
+	@extend %svg-common;
+	background-position: 35.13513513513514% 0;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-menu {
+	background-position: 35.13513513513514% 0;
+}
+@mixin svg-svg-menu-hover {
+	.svg-svg-menu {
+		@include svg-pos-svg-menu-hover
+	}
+}
+
+.svg-svg-menu:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-menu-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-moon {
+	@extend %svg-common;
+	background-position: 0 37.142857142857146%;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-moon {
+	background-position: 0 37.142857142857146%;
+}
+@mixin svg-svg-moon-hover {
+	.svg-svg-moon {
+		@include svg-pos-svg-moon-hover
+	}
+}
+
+.svg-svg-moon:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-moon-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-note {
+	@extend %svg-common;
+	background-position: 28.205128205128204% 70.27027027027027%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-note {
+	background-position: 28.205128205128204% 70.27027027027027%;
+}
+@mixin svg-svg-note-hover {
+	.svg-svg-note {
+		@include svg-pos-svg-note-hover
+	}
+}
+
+.svg-svg-note:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-note-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-people {
+	@extend %svg-common;
+	background-position: 56.41025641025641% 70.27027027027027%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-people {
+	background-position: 56.41025641025641% 70.27027027027027%;
+}
+@mixin svg-svg-people-hover {
+	.svg-svg-people {
+		@include svg-pos-svg-people-hover
+	}
+}
+
+.svg-svg-people:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-people-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-profile {
+	@extend %svg-common;
+	background-position: 35.13513513513514% 37.142857142857146%;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-profile {
+	background-position: 35.13513513513514% 37.142857142857146%;
+}
+@mixin svg-svg-profile-hover {
+	.svg-svg-profile {
+		@include svg-pos-svg-profile-hover
+	}
+}
+
+.svg-svg-profile:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-profile-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-routing {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-routing {
+	background-position: 100% 0;
+}
+@mixin svg-svg-routing-hover {
+	.svg-svg-routing {
+		@include svg-pos-svg-routing-hover
+	}
+}
+
+.svg-svg-routing:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-routing-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-search-normal {
+	@extend %svg-common;
+	background-position: 70.27027027027027% 0;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-search-normal {
+	background-position: 70.27027027027027% 0;
+}
+@mixin svg-svg-search-normal-hover {
+	.svg-svg-search-normal {
+		@include svg-pos-svg-search-normal-hover
+	}
+}
+
+.svg-svg-search-normal:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-search-normal-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-shopping {
+	@extend %svg-common;
+	background-position: 70.27027027027027% 37.142857142857146%;
+	background-size: math.div(100, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-shopping {
+	background-position: 70.27027027027027% 37.142857142857146%;
+}
+@mixin svg-svg-shopping-hover {
+	.svg-svg-shopping {
+		@include svg-pos-svg-shopping-hover
+	}
+}
+
+.svg-svg-shopping:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-shopping-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-star {
+	@extend %svg-common;
+	background-position: 100% 29.72972972972973%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-star {
+	background-position: 100% 29.72972972972973%;
+}
+@mixin svg-svg-star-hover {
+	.svg-svg-star {
+		@include svg-pos-svg-star-hover
+	}
+}
+
+.svg-svg-star:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-star-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-video-play {
+	@extend %svg-common;
+	background-position: 100% 59.45945945945946%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-video-play {
+	background-position: 100% 59.45945945945946%;
+}
+@mixin svg-svg-video-play-hover {
+	.svg-svg-video-play {
+		@include svg-pos-svg-video-play-hover
+	}
+}
+
+.svg-svg-video-play:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-video-play-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-svg-video-square {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(100, 22)*100% auto;
+	width: 22px;
+
+}
+@mixin svg-pos-svg-video-square {
+	background-position: 0 100%;
+}
+@mixin svg-svg-video-square-hover {
+	.svg-svg-video-square {
+		@include svg-pos-svg-video-square-hover
+	}
+}
+
+.svg-svg-video-square:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(22, 22)*100%;
+}
+
+.svg-svg-video-square-dims {
+	width: 22px;
+	height: 22px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }
