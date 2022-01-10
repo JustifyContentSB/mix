@@ -5,8 +5,9 @@
    &__list
       margin-bottom: 10px
    &__item
+      min-height: 69px
       margin-bottom: 6px
-      padding: 10px
+      padding: 8px 10px
       background: var(--theme950)
       display: flex
       align-items: center
@@ -16,10 +17,13 @@
    &__left
       display: flex
       align-items: center
+   &__center
+      display: none
    &__poster
       width: 46px
+      min-width: 46px
       height: 46px
-      margin-right: 10px
+      margin-right: 8px
       display: flex
       justify-content: center
       align-items: center
@@ -34,12 +38,13 @@
       align-items: center
       &-btn
          margin-bottom: 6px
-         width: 16px
-         height: 16px
+         width: 19px
+         height: 19px
       &-num
          font-size: 11px
    &__info
       width: 157px
+      padding: 2px 0
    &__name
       margin-bottom: 6px
       font-weight: 600
@@ -50,9 +55,22 @@
       line-height: 100%
       color: var(--theme300)
    &__right
-      padding-right: 10px
+      display: flex
+      align-items: center
    &__subscribe
       display: none
+      padding: 0 20px
+      margin-right: 10px
+      color: var(--theme050)
+      font-weight: 500
+      font-size: 13px
+      line-height: 100%
+      text-align: right
+      &-type
+         margin-top: 6px
+         color: var(--accent)
+   &__desc
+      padding: 0 10px
    &__duration
       color: var(--theme050)
       font-weight: 500
@@ -62,3 +80,53 @@
       width: 100%
       display: flex
       box-shadow: 0px 5px 10px rgba(232, 25, 67, 0.35)
+
+@media screen and (min-width: 768px)
+   .music
+      margin-bottom: 30px
+      &__item
+         min-height: 66px
+      &__info
+         width: 330px
+         max-width: 330px
+      &__subscribe
+         display: block
+
+@media screen and (min-width: 1024px)
+   .music
+      &__center
+         margin-right: 92px
+         display: flex
+         text-align: right
+         font-weight: 500
+         font-size: 13px
+         line-height: 100%
+         color: var(--theme050)
+      &__details
+         padding: 0 20px
+         &-desc
+            margin-top: 6px
+            color: var(--theme500)
+
+@media screen and (min-width: 1280px)
+   .music
+      margin-bottom: 40px
+      &__title
+         margin-bottom: 16px
+      &__list
+         margin-bottom: 15px
+      &__center
+         margin-right: 0
+         margin-left: 120px
+
+@media screen and (min-width: 1440px)
+   .music
+      margin-bottom: 50px
+      &__center
+         margin-left: 248px
+
+@media screen and (min-width: 1600px)
+   .music
+      margin-bottom: 64px
+      &__center
+         margin-left: 380px

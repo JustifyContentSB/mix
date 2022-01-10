@@ -6,19 +6,23 @@ block page
         .listen__inner.container
             .listen__bg.background-image
                 picture
+                    source(srcset="images/listen/listen-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                    source(srcset="images/listen/listen-desk.jpg" media="(min-width: 1024px)" type="image/jpg")
+                    source(srcset="images/listen/listen-768.webp" media="(min-width: 768px)" type="image/webp")
+                    source(srcset="images/listen/listen-768.jpg" media="(min-width: 768px)" type="image/jpg")
                     source(srcset="images/listen/listen-360.webp" type="image/webp")
                     img(src="images/listen/listen-360.jpg" alt="listen background image" width="460" height="242")
             .listen__info
                 h2.listen__title LISTEN WITHOUT LIMITS AND DOWNLOAD !
                 p.listen__text.
                     Get everything you need for you next show, #[br] and bring down the house.
-                form.listen__form(action="#")
-                    label.listen__form-label
-                        input.listen__form-field(type="text" placeholder="Track, Artist and Label search")
-                        button.listen__form-btn
+                form.listen__search(action="#")
+                    label.listen__search-label
+                        input.listen__search-field(type="text" placeholder="Track, Artist and Label search")
+                        button.listen__search-btn
                             span.visually-hidden Search button
                             svg
-                                use(href="images/sprites/main.stack.svg#svg-search-normal")
+                                use(href="images/sprites/main.stack.svg#svg-search")
 
     section.features
         .features__inner.container
@@ -49,26 +53,96 @@ block page
                         li
                             a.best__date-btn(href="#") Month
                     a.best__more(href="#") See more tracks
-            .best__tracks
-                a.best__tracks-item(href="#") 
-                    .best__tracks-top
-                        .best__tracks-img
-                            picture
-                                source(srcset="images/best/tracks-1.webp" type="image/webp")
-                                img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
-                        p.best__tracks-duration 03:45
-                    .best__tracks-info
-                        h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
-                        p.best__tracks-author Jacob Jones
-                        .best__tracks-manage
-                            span Subscribe
-                            span.best__tracks-subscribe Premium
-            a.best__btn.btn(href="#") VIEW MORE BEST TRACKS
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-arrow-right")
+            .best__tracks.best__swiper
+                .best__tracks-swiper.swiper-container
+                    .swiper-wrapper
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+                        a.best__tracks-item.swiper-slide(href="#") 
+                            .best__tracks-top
+                                .best__tracks-img
+                                    picture
+                                        source(srcset="images/best/tracks-1.webp" type="image/webp")
+                                        img(src="images/best/tracks-1.jpg" alt="poster" width="124" height="124")
+                                p.best__tracks-duration 03:45
+                            .best__tracks-info
+                                h3.best__tracks-title Becoming. Giving Up. (Years of Denial Remix)
+                                p.best__tracks-author Jacob Jones
+                                .best__tracks-manage
+                                    span Subscribe
+                                    span.best__tracks-subscribe Premium
+            .best__bottom
+                a.best__btn.btn(href="#") VIEW MORE BEST TRACKS
 
     section.best
         .best__inner.container
             .best__top
-                h2.best__title.title BEST TRACKS OF OUR DJ POOL
+                h2.best__title.title BEST Playlists
                 .best__manage
                     ul.best__date
                         li
@@ -78,23 +152,103 @@ block page
                         li
                             a.best__date-btn(href="#") Month
                     a.best__more(href="#") See more playlists
-            .best__playlist
-                a.best__playlist-item(href="#")
-                    .best__playlist-img
-                        picture
-                            source(srcset="images/best/playlist-1.webp" type="image/webp")
-                            img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
-                    .best__playlist-info
-                        .best__playlist-box
-                            h3.best__playlist-desc Playlist name
-                            p.best__playlist-title Darlene Robertson
-                        .best__playlist-box
-                            p.best__playlist-title Tracks
-                            p.best__playlist-desc 65
-                        .best__playlist-box
-                            p.best__playlist-title Playlist time
-                            p.best__playlist-desc 06:34:32
-            a.best__btn.btn(href="#") VIEW MORE BEST PLAYLISTS
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-arrow-right")
+            .best__playlist.best__swiper
+                .best__playlist-swiper.swiper-container
+                    .swiper-wrapper
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+                        a.best__playlist-item.swiper-slide(href="#")
+                            .best__playlist-img
+                                picture
+                                    source(srcset="images/best/playlist-1.webp" type="image/webp")
+                                    img(src="images/best/playlist-1.jpg" alt="poster" width="90" height="90")
+                            .best__playlist-info
+                                .best__playlist-box
+                                    h3.best__playlist-desc Playlist name
+                                    p.best__playlist-title Darlene Robertson
+                                .best__playlist-box
+                                    p.best__playlist-title Tracks
+                                    p.best__playlist-desc 65
+                                .best__playlist-box
+                                    p.best__playlist-title Playlist time
+                                    p.best__playlist-desc 06:34:32
+            .best__bottom
+                a.best__btn.btn(href="#") VIEW MORE BEST PLAYLISTS
 
     section.music
         .music__inner.container
@@ -114,10 +268,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -134,10 +295,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -154,10 +322,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -174,10 +349,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -194,10 +376,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -214,10 +403,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
@@ -234,18 +430,25 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
                 li.music__item
                     .music__left
                         .music__poster
                             picture
-                                source(srcset="images/music/music-1.webp" type="image/webp")
-                                img(src="images/music/music-1.jpg" alt="poster" width="46" height="46")
+                                source(srcset="images/music/music-7.webp" type="image/webp")
+                                img(src="images/music/music-7.jpg" alt="poster" width="46" height="46")
                         .music__download
                             a.music__download-btn(href="#")
                                 svg
@@ -254,10 +457,17 @@ block page
                         .music__info
                             h3.music__name Overtone To The Sun (Bubble Couple Remix)
                             p.music__author Marielle Wigington
+                    .music__center
+                        .music__details
+                            p.music__details-main Deep House
+                            p.music__details-desc Electro House
+                        .music__details
+                            p.music__details-main 128 bpm
+                            p.music__details-desc Am
                     .music__right
                         .music__subscribe
                             p Subscribe
-                            p.music__sibscribe-type Premium
+                            p.music__subscribe-type Premium
                         .music__desc
                             .music__duration 429:12
             a.music__more.btn.btn-double(href="#")
@@ -271,8 +481,117 @@ block page
         .spin__inner.container
             .spin__bg.background-image
                 picture
+                    source(srcset="images/spin/spin-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                    source(srcset="images/spin/spin-desk.jpg" media="(min-width: 1024px)" type="image/jpg")
+                    source(srcset="images/spin/spin-768.webp" media="(min-width: 768px)" type="image/webp")
+                    source(srcset="images/spin/spin-768.jpg" media="(min-width: 768px)" type="image/jpg")
                     source(srcset="images/spin/spin-360.webp" type="image/webp")
                     img(src="images/spin/spin-360.jpg" alt="spin background image" width="336" height="204")
             .spin__info
                 h2.spin__title Questions before taking us for a spin?
                 p.spin__text #[a(href="#") Read FAQ] or #[a(href="#") Contact us]
+                a.spin__btn.btn.btn-outline(href="#") MORE INFORMATION
+
+    section.best
+        .best__inner.container
+            .best__top
+                h2.best__title.title BEST Artists
+                .best__manage
+                    ul.best__date
+                        li
+                            a.best__date-btn.best__date-btn--active(href="#") Today
+                        li
+                            a.best__date-btn(href="#") Week
+                        li
+                            a.best__date-btn(href="#") Month
+                    a.best__more(href="#") See more artists
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-arrow-right")
+            .best__artist.best__swiper
+                .best__artist-swiper.swiper-container
+                    .swiper-wrapper
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+                        a.best__artist-item.swiper-slide(href="#")
+                            .best__artist-photo
+                                picture
+                                    source(srcset="images/best/artist-1.webp" type="image/webp")
+                                    img(src="images/best/artist-1.jpg" alt="artist photo" width="120" height="120")
+                            .best__artist-info
+                                p.best__artist-name Jenny Wilson
+                                p.best__artist-about 12 tracks, 45 albums
+            .best__bottom
+                a.best__btn.btn(href="#") VIEW MORE BEST artists
+
+    section.rate
+        .rate__inner.container
+            article.rate__item
+                .rate__bg.background-image
+                    picture
+                        source(srcset="images/rate/rate-1.webp" type="image/webp")
+                        img(src="images/rate/rate-1.jpg" alt="rate background image" width="336" height="329")
+                .rate__info
+                    h2.rate__title MIX PRO
+                    .rate__text
+                        p More than 3,000,000 tracks in excellent quality
+                        p An ability to batch download your favorite tracks
+                        p Comment and vote for your favorite tracks
+                        p Create and share playlists
+                        p Opportunity to be one of the first to hear the best new tracks
+                        p Customize your own unique feed of tracks, mixes, artists and labels
+                    a.rate__btn.btn.btn-outline(href="#") see more best tracks
+            article.rate__item
+                .rate__bg.background-image
+                    picture
+                        source(srcset="images/rate/rate-2.webp" type="image/webp")
+                        img(src="images/rate/rate-2.jpg" alt="rate background image" width="336" height="329")
+                .rate__info
+                    h2.rate__title MIX PRO
+                    .rate__text
+                        p More than 3,000,000 tracks in excellent quality
+                        p An ability to batch download your favorite tracks
+                        p Comment and vote for your favorite tracks
+                        p Create and share playlists
+                        p Opportunity to be one of the first to hear the best new tracks
+                        p Customize your own unique feed of tracks, mixes, artists and labels
+                    a.rate__btn.btn.btn-outline(href="#") see more best tracks
+
+

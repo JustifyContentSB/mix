@@ -3,7 +3,6 @@
    color: #fff
    text-align: center
    &__inner
-      padding: 0
       position: relative
    &__bg
       left: 12px
@@ -14,6 +13,7 @@
       display: flex
       flex-direction: column
       align-items: center
+      justify-content: center
       position: relative
       z-index: 5
       overflow: hidden
@@ -29,28 +29,88 @@
       font-size: 13px
       line-height: 130%
       letter-spacing: 0.02em
-   &__form
+   &__search
       width: 100%
       &-label
          border-radius: 10px
          position: relative
       &-field
          width: 100%
+         height: 48px
          padding: 15px 50px 15px 20px
          background: #fff
          box-shadow: 0px 5px 10px rgba(57, 62, 105, 0.4)
          border-radius: 10px
          border: none
          color: var(--theme350)
+         font-size: 15px
+         line-height: 100%
+         font-weight: 300
+         letter-spacing: 0.02em
          &::placeholder
             color: var(--theme350)
-            font-weight: 300
-            font-size: 15px
-            line-height: 100%
       &-btn
-         width: 24px
-         height: 24px
+         width: 26px
+         height: 26px
          position: absolute
          right: 20px
          top: 50%
          transform: translateY(-50%)
+         svg
+            fill: #000
+
+@media screen and (min-width: 768px)
+   .listen
+      &__bg
+         left: 18px
+         right: 18px
+      &__info
+         min-height: 200px
+         padding: 37px 60px
+      &__title
+         margin-bottom: 12px
+      &__text
+         br
+            display: none
+
+@media screen and (min-width: 1024px)
+   .listen
+      &__bg
+         left: 28px
+         right: 28px
+      &__info
+         padding: 32px 100px
+      &__title
+         font-size: 30px
+      &__search
+         &-field
+            height: 56px
+            padding-left: 26px
+            font-size: 17px
+
+@media screen and (min-width: 1280px)
+   .listen
+      &__bg
+         left: 48px
+         right: 48px
+      &__info
+         min-height: 280px
+      &__title
+         font-size: 40px
+      &__text
+         margin-bottom: 30px
+
+@media screen and (min-width: 1440px)
+   .listen
+      margin-bottom: 25px
+      &__bg
+         left: 65px
+         right: 65px
+
+@media screen and (min-width: 1600px)
+   .listen
+      &__info
+         padding: 80px 100px 60px
+         min-height: 320px
+      &__text
+         margin-bottom: 50px

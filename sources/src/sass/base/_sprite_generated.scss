@@ -6,13 +6,13 @@
 
 .svg-svg-activity {
 	@extend %svg-common;
-	background-position: 0 70.27027027027027%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 54.166666666666664% 66.66666666666667%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-activity {
-	background-position: 0 70.27027027027027%;
+	background-position: 54.166666666666664% 66.66666666666667%;
 }
 @mixin svg-svg-activity-hover {
 	.svg-svg-activity {
@@ -36,7 +36,7 @@
 .svg-svg-arrow-down {
 	@extend %svg-common;
 	background-position: 0 0;
-	background-size: math.div(100, 26)*100% auto;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
@@ -62,15 +62,44 @@
 	height: 26px;
 }
 
+.svg-svg-arrow-right {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(118, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-arrow-right {
+	background-position: 100% 0;
+}
+@mixin svg-svg-arrow-right-hover {
+	.svg-svg-arrow-right {
+		@include svg-pos-svg-arrow-right-hover
+	}
+}
+
+.svg-svg-arrow-right:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-arrow-right-dims {
+	width: 18px;
+	height: 18px;
+}
+
 .svg-svg-download {
 	@extend %svg-common;
-	background-position: 26.829268292682926% 96.1038961038961%;
-	background-size: math.div(100, 18)*100% auto;
+	background-position: 66% 96.29629629629629%;
+	background-size: math.div(118, 18)*100% auto;
 	width: 18px;
 
 }
 @mixin svg-pos-svg-download {
-	background-position: 26.829268292682926% 96.1038961038961%;
+	background-position: 66% 96.29629629629629%;
 }
 @mixin svg-svg-download-hover {
 	.svg-svg-download {
@@ -93,13 +122,13 @@
 
 .svg-svg-menu {
 	@extend %svg-common;
-	background-position: 35.13513513513514% 0;
-	background-size: math.div(100, 26)*100% auto;
+	background-position: 28.26086956521739% 0;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
 @mixin svg-pos-svg-menu {
-	background-position: 35.13513513513514% 0;
+	background-position: 28.26086956521739% 0;
 }
 @mixin svg-svg-menu-hover {
 	.svg-svg-menu {
@@ -122,13 +151,13 @@
 
 .svg-svg-moon {
 	@extend %svg-common;
-	background-position: 0 37.142857142857146%;
-	background-size: math.div(100, 26)*100% auto;
+	background-position: 0 35.13513513513514%;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
 @mixin svg-pos-svg-moon {
-	background-position: 0 37.142857142857146%;
+	background-position: 0 35.13513513513514%;
 }
 @mixin svg-svg-moon-hover {
 	.svg-svg-moon {
@@ -151,13 +180,13 @@
 
 .svg-svg-note {
 	@extend %svg-common;
-	background-position: 28.205128205128204% 70.27027027027027%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 81.25% 0;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-note {
-	background-position: 28.205128205128204% 70.27027027027027%;
+	background-position: 81.25% 0;
 }
 @mixin svg-svg-note-hover {
 	.svg-svg-note {
@@ -178,15 +207,44 @@
 	height: 22px;
 }
 
+.svg-svg-notification {
+	@extend %svg-common;
+	background-position: 28.26086956521739% 35.13513513513514%;
+	background-size: math.div(118, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-notification {
+	background-position: 28.26086956521739% 35.13513513513514%;
+}
+@mixin svg-svg-notification-hover {
+	.svg-svg-notification {
+		@include svg-pos-svg-notification-hover
+	}
+}
+
+.svg-svg-notification:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-notification-dims {
+	width: 26px;
+	height: 26px;
+}
+
 .svg-svg-people {
 	@extend %svg-common;
-	background-position: 56.41025641025641% 70.27027027027027%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 81.25% 28.205128205128204%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-people {
-	background-position: 56.41025641025641% 70.27027027027027%;
+	background-position: 81.25% 28.205128205128204%;
 }
 @mixin svg-svg-people-hover {
 	.svg-svg-people {
@@ -209,13 +267,13 @@
 
 .svg-svg-profile {
 	@extend %svg-common;
-	background-position: 35.13513513513514% 37.142857142857146%;
-	background-size: math.div(100, 26)*100% auto;
+	background-position: 56.52173913043478% 0;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
 @mixin svg-pos-svg-profile {
-	background-position: 35.13513513513514% 37.142857142857146%;
+	background-position: 56.52173913043478% 0;
 }
 @mixin svg-svg-profile-hover {
 	.svg-svg-profile {
@@ -238,13 +296,13 @@
 
 .svg-svg-routing {
 	@extend %svg-common;
-	background-position: 100% 0;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 81.25% 56.41025641025641%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-routing {
-	background-position: 100% 0;
+	background-position: 81.25% 56.41025641025641%;
 }
 @mixin svg-svg-routing-hover {
 	.svg-svg-routing {
@@ -265,23 +323,23 @@
 	height: 22px;
 }
 
-.svg-svg-search-normal {
+.svg-svg-search {
 	@extend %svg-common;
-	background-position: 70.27027027027027% 0;
-	background-size: math.div(100, 26)*100% auto;
+	background-position: 56.52173913043478% 35.13513513513514%;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
-@mixin svg-pos-svg-search-normal {
-	background-position: 70.27027027027027% 0;
+@mixin svg-pos-svg-search {
+	background-position: 56.52173913043478% 35.13513513513514%;
 }
-@mixin svg-svg-search-normal-hover {
-	.svg-svg-search-normal {
-		@include svg-pos-svg-search-normal-hover
+@mixin svg-svg-search-hover {
+	.svg-svg-search {
+		@include svg-pos-svg-search-hover
 	}
 }
 
-.svg-svg-search-normal:before {
+.svg-svg-search:before {
 	content:"";
 	display:block;
 	font-size:0;
@@ -289,20 +347,20 @@
 	padding-top: math.div(26, 26)*100%;
 }
 
-.svg-svg-search-normal-dims {
+.svg-svg-search-dims {
 	width: 26px;
 	height: 26px;
 }
 
 .svg-svg-shopping {
 	@extend %svg-common;
-	background-position: 70.27027027027027% 37.142857142857146%;
-	background-size: math.div(100, 26)*100% auto;
+	background-position: 0 70.27027027027027%;
+	background-size: math.div(118, 26)*100% auto;
 	width: 26px;
 
 }
 @mixin svg-pos-svg-shopping {
-	background-position: 70.27027027027027% 37.142857142857146%;
+	background-position: 0 70.27027027027027%;
 }
 @mixin svg-svg-shopping-hover {
 	.svg-svg-shopping {
@@ -323,15 +381,44 @@
 	height: 26px;
 }
 
+.svg-svg-sms {
+	@extend %svg-common;
+	background-position: 28.26086956521739% 70.27027027027027%;
+	background-size: math.div(118, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-sms {
+	background-position: 28.26086956521739% 70.27027027027027%;
+}
+@mixin svg-svg-sms-hover {
+	.svg-svg-sms {
+		@include svg-pos-svg-sms-hover
+	}
+}
+
+.svg-svg-sms:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-sms-dims {
+	width: 26px;
+	height: 26px;
+}
+
 .svg-svg-star {
 	@extend %svg-common;
-	background-position: 100% 29.72972972972973%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 0 100%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-star {
-	background-position: 100% 29.72972972972973%;
+	background-position: 0 100%;
 }
 @mixin svg-svg-star-hover {
 	.svg-svg-star {
@@ -354,13 +441,13 @@
 
 .svg-svg-video-play {
 	@extend %svg-common;
-	background-position: 100% 59.45945945945946%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 22.916666666666668% 100%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-video-play {
-	background-position: 100% 59.45945945945946%;
+	background-position: 22.916666666666668% 100%;
 }
 @mixin svg-svg-video-play-hover {
 	.svg-svg-video-play {
@@ -383,13 +470,13 @@
 
 .svg-svg-video-square {
 	@extend %svg-common;
-	background-position: 0 100%;
-	background-size: math.div(100, 22)*100% auto;
+	background-position: 45.833333333333336% 100%;
+	background-size: math.div(118, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-video-square {
-	background-position: 0 100%;
+	background-position: 45.833333333333336% 100%;
 }
 @mixin svg-svg-video-square-hover {
 	.svg-svg-video-square {

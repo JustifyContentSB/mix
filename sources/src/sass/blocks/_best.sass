@@ -1,14 +1,19 @@
 .best
    margin-bottom: 24px
+   &__inner
+      padding: 0
+   &__top
+      padding: 0 12px
    &__title
-      margin-bottom: 6px
+      margin-bottom: 2px
    &__manage
       display: flex
       justify-content: space-between
+      align-items: center
    &__date
       padding-bottom: 10px
       display: flex
-      overflow-x: scroll
+      overflow-x: auto
       -ms-overflow-style: none
       overflow: -moz-scrollbars-none
       &::-webkit-scrollbar
@@ -27,9 +32,17 @@
             color: var(--accent)
    &__more
       display: none
+      align-items: center
       font-weight: 500
       font-size: 12px
       line-height: 100%
+      svg
+         width: 18px
+         height: 18px
+         margin-left: 10px
+   &__swiper
+      padding: 0 12px
+      overflow: hidden
    &__tracks
       margin-bottom: 10px
       &-top
@@ -62,16 +75,24 @@
       &-item
          width: 148px
          min-width: 148px
+         display: flex
+         flex-direction: column
          padding: 12px
          background: var(--theme925)
          border-radius: 10px
          cursor: pointer
+      &-info
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         flex-grow: 1
       &-title
          margin-bottom: 8px
          font-weight: bold
          font-size: 12px
          line-height: 130%
       &-author
+         margin-top: auto
          margin-bottom: 8px
          color: var(--theme350)
          font-weight: 500
@@ -110,16 +131,41 @@
          &:last-child
             margin-bottom: 0
       &-desc
-         margin-bottom: 6px
+         margin-bottom: 0
          font-weight: 600
          font-size: 12px
          line-height: 100%
       &-title
-         margin-bottom: 4px
+         margin: 6px 0 4px
          color: var(--theme350)
          font-weight: 500
          font-size: 11px
          line-height: 100%
+   &__artist
+      margin-bottom: 10px
+      &-item
+         width: 148px
+         min-width: 148px
+         min-height: 194px
+         padding: 14px
+         background: var(--theme950)
+         border-radius: 10px
+      &-photo
+         margin-bottom: 10px
+         img
+            width: 100%
+      &-info
+         font-size: 11px
+         line-height: 100%
+      &-name
+         margin-bottom: 10px
+         font-weight: bold
+         line-height: 120%
+      &-about
+         font-weight: 500
+         color: var(--theme275)
+   &__bottom
+      padding: 0 12px
    &__btn
       width: 100%
       min-height: 44px
@@ -131,3 +177,161 @@
       border-radius: 30px
       box-shadow: 0px 5px 10px rgba(232, 25, 67, 0.35)
       display: flex
+
+@media screen and (min-width: 768px)
+   .best
+      margin-bottom: 30px
+      &__top
+         padding: 0 18px
+      &__swiper
+         padding: 0 18px
+      &__top
+         margin-bottom: 10px
+      &__date
+         padding-bottom: 0
+         overflow-x: visible
+         flex-wrap: wrap
+      &__more
+         display: inline-flex
+      &__btn
+         display: none
+
+@media screen and (min-width: 1024px)
+   .best
+      margin-bottom: 14px
+      &__top
+         padding: 0 28px
+      &__swiper
+         padding: 0 28px
+         .swiper-wrapper
+            flex-wrap: wrap
+      &__tracks
+         &-item
+            width: calc((100% / 6) - (80px / 6))
+            margin-right: 16px
+            margin-bottom: 16px
+            &:nth-child(6n)
+               margin-right: 0
+      &__playlist
+         &-item
+            width: calc(33.33% - 11px)
+            margin-right: 16px
+            margin-bottom: 16px
+            &:nth-child(3n)
+               margin-right: 0
+         &-img
+            width: 100px
+            min-width: 100px
+            height: 100px
+      &__artist
+         &-item
+            width: calc((100% / 6) - (80px / 6))
+            margin-right: 16px
+            margin-bottom: 16px
+            &:nth-child(6n)
+               margin-right: 0
+
+@media screen and (min-width: 1280px)
+   .best
+      margin-bottom: 26px
+      &__top
+         margin-bottom: 16px
+         padding: 0 48px
+      &__title
+         margin-bottom: 6px
+      &__date
+         &-btn
+            font-size: 13px
+      &__more
+         font-size: 13px
+      &__swiper
+         padding: 0 48px
+      &__tracks
+         &-item
+            padding: 18px 14px
+         &-title
+            font-size: 13px
+         &-author
+            font-size: 13px
+         &-manage
+            font-size: 13px
+      &__playlist
+         &-item
+            width: calc(25% - 12px)
+            &:nth-child(3n)
+               margin-right: 16px
+            &:nth-child(4n)
+               margin-right: 0
+      &__artist
+         &-item
+            padding: 18px
+         &-photo
+            margin-bottom: 16px
+         &-info
+            font-size: 12px
+         &-name
+            font-size: 13px
+
+@media screen and (min-width: 1440px)
+   .best
+      margin-bottom: 32px
+      &__top
+         padding: 0 65px
+      &__date
+         &-btn
+            font-size: 14px
+      &__more
+         font-size: 14px
+      &__swiper
+         padding: 0 65px
+      &__tracks
+         &-item
+            width: calc((100% / 6) - (100px / 6))
+            margin-right: 20px
+            padding: 18px
+      &__playlist
+         &-item
+            width: calc(25% - 15px)
+            margin-right: 20px
+         &-img
+            width: 120px
+            min-width: 120px
+            height: 120px
+         &-desc
+            font-size: 14px
+         &-title
+            margin: 8px 0 6px
+            font-size: 12px
+      &__artist
+         &-item
+            width: calc((100% / 6) - (100px / 6))
+            margin-right: 20px
+         &-photo
+            margin-bottom: 20px
+         &-name
+            margin-bottom: 14px
+
+@media screen and (min-width: 1600px)
+   .best
+      margin-bottom: 42px
+      &__title
+         margin-bottom: 8px
+      &__top
+         margin-bottom: 14px
+      &__tracks
+         &-item
+            width: calc((100% / 6) - (120px / 6))
+            min-height: 320px
+            margin-right: 24px
+      &__playlist
+         &-item
+            width: calc(25% - 18px)
+            margin-right: 24px
+            &:nth-child(3n)
+               margin-right: 24px
+            &:nth-child(4n)
+               margin-right: 0
+      &__artist
+         &-item
+            width: calc((100% / 6) - (120px / 6))
+            margin-right: 24px

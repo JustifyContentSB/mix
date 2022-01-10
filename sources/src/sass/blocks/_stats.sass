@@ -1,0 +1,35 @@
+.stats
+   display: flex
+   flex-wrap: wrap
+   &__item
+      margin-bottom: 12px
+      margin-right: 30px
+      &:nth-child(3n)
+         margin-right: 0
+   &__num
+      margin-bottom: 12px
+      font-weight: bold
+      font-size: 20px
+      line-height: 110%
+   &__title
+      font-weight: 400
+      font-size: 13px
+      line-height: 100%
+      color: var(--theme400)
+
+@media screen and (min-width: 768px)
+   .stats
+      &__item
+         margin-right: 70px
+      &__num
+         font-size: 26px
+
+@media screen and (min-width: 1024px)
+   .stats
+      &__num
+         font-size: 34px
+
+@media screen and (min-width: 1280px)
+   .stats
+      &__num
+         font-size: 38px

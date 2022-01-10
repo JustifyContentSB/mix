@@ -44,7 +44,8 @@
         "imagemin-jpeg-recompress": "^7.0.0",
         "imagemin-pngquant": "^9.0.2",
         "regenerator-runtime": "^0.13.9",
-        "sass": "^1.38.1"
+        "sass": "^1.38.1",
+        "swiper": "^7.4.1"
     },
     "browserslist": [
         "last 12 versions",

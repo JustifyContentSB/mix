@@ -1,0 +1,102 @@
+.footer
+   padding-bottom: 4px
+   &__text
+      margin-bottom: 30px
+      font-weight: 300
+      font-size: 14px
+      line-height: 160%
+   &__nav
+      margin-bottom: 26px
+      &-col
+         max-width: 360px
+         margin-bottom: 20px
+         &:last-child
+            margin-bottom: 0
+      &-title
+         margin-bottom: 8px
+         font-weight: bold
+         font-size: 16px
+         line-height: 150%
+         text-transform: uppercase
+      &-list
+         display: grid
+         grid-template-columns: 1fr 1fr
+         grid-gap: 5px
+         a
+            font-weight: 400
+            font-size: 13px
+            line-height: 100%
+            color: var(--theme400)
+            position: relative
+            &::after
+               content: ''
+               height: 1px
+               background: var(--theme400)
+               position: absolute
+               bottom: 0
+               right: 0
+               width: 0
+               transition: width .2s ease
+            &:hover,
+            &:focus
+               &::after
+                  width: 100%
+                  right: auto
+                  left: 0
+   &__stats
+      margin-bottom: 18px
+
+@media screen and (min-width: 768px)
+   .footer
+      padding-bottom: 12px
+      &__nav
+         margin-bottom: 8px
+         display: flex
+         &-col
+            margin-right: 56px
+            &:nth-child(2n)
+               margin-right: 0
+            &:last-child
+               margin-bottom: 20px
+         &-title
+            margin-bottom: 12px
+         &-list
+            grid-gap: 5px 50px
+
+@media screen and (min-width: 1024px)
+   .footer
+      &__text
+         padding-right: 20px
+         font-size: 15px
+      &__nav
+         &-title
+            font-size: 18px
+
+@media screen and (min-width: 1280px)
+   .footer
+      padding-bottom: 28px
+      &__text
+         font-size: 17px
+      &__nav
+         margin-bottom: 24px
+
+@media screen and (min-width: 1440px)
+   .footer
+      padding-bottom: 38px
+      &__text
+         margin-bottom: 40px
+         font-size: 18px
+      &__nav
+         margin-bottom: 18px
+      &__stats
+         margin-bottom: 22px
+
+@media screen and (min-width: 1600px)
+   .footer
+      padding-bottom: 50px
+      &__text
+         margin-bottom: 60px
+      &__nav
+         margin-bottom: 40px
+      &__stats
+         margin-bottom: 40px

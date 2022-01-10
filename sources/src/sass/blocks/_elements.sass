@@ -1,6 +1,6 @@
 .btn
    min-height: 44px
-   padding: 15px
+   padding: 10px 15px
    font-weight: 800
    font-size: 14px
    line-height: 100%
@@ -18,9 +18,14 @@
    &-double
       span
          margin: 0 10px
+   &-outline
+      padding: 13px 15px
+      background: transparent
+      border: 2px solid var(--accent)
 
 .btn-circle
    width: 36px
+   min-width: 36px
    height: 36px
    border-radius: 50%
    display: inline-flex
@@ -28,11 +33,27 @@
    align-items: center
    background: var(--theme850)
    svg
-      width: 24px
-      height: 24px
+      width: 26px
+      height: 26px
 
 .title
    font-weight: 800
    font-size: 16px
    line-height: 120%
    text-transform: uppercase
+
+@media screen and (min-width: 768px)
+   .btn-circle
+      width: 44px
+      min-width: 44px
+      height: 44px
+   .title
+      font-size: 20px
+
+@media screen and (min-width: 1280px)
+   .title
+      font-size: 24px
+
+@media screen and (min-width: 1440px)
+   .title
+      font-size: 28px

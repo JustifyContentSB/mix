@@ -3,24 +3,48 @@ header.header
         .header__top
             .header__top-inner.container
                 .header__lang
-                    button.header__lang-active English
+                    button.header__lang-current English
+                ul.header__docs
+                    li
+                        a(href="#") User Agreements
+                    li
+                        a(href="#") Privacy Policy
+                    li
+                        a(href="#") Information
+                    li
+                        a(href="#") Support
         .header__bottom
             .header__bottom-inner.container
                 .header__menu
                     button.header__burger.btn-circle
                         svg
                             use(href="images/sprites/main.stack.svg#svg-menu")
+                        span.header__burger-text Get Music
                     a.header__logo(href="#")
                         img(src="images/icons/logo.svg", alt="mixupload logo" width="150" height="29")
+                    form.header__search(action="#")
+                        label.header__search-label
+                            input.header__search-field(type="text" placeholder="Search")
+                            span.header__search-icon
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-search")
                     ul.header__manage
                         li.header__manage-item
                             a.header__manage-btn.btn-circle(href="#")
                                 svg
-                                    use(href="images/sprites/main.stack.svg#svg-shopping")
+                                    use(href="images/sprites/main.stack.svg#svg-moon")
+                        li.header__manage-item.header__manage-item--hidden
+                            a.header__manage-btn.btn-circle(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-notification")
+                        li.header__manage-item.header__manage-item--hidden
+                            a.header__manage-btn.btn-circle(href="#")
+                                svg
+                                    use(href="images/sprites/main.stack.svg#svg-sms")
                         li.header__manage-item
                             a.header__manage-btn.btn-circle(href="#")
                                 svg
-                                    use(href="images/sprites/main.stack.svg#svg-moon")
+                                    use(href="images/sprites/main.stack.svg#svg-shopping")
                     .header__user
                         .header__user-profile
                             a.header__user-btn.btn-circle(href="#")
